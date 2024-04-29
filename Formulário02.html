@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Continuação forms</title>
+</head>
+<body>
+    <form action="Registo.php" method="post">
+        <p><label for="icor">cor:</label></p>
+        <p><input type="color" name="cor" id="icor" value="#987654"></p>
+        <p>
+            <label for="inivel:"></label>
+           <input type="range" name="nivel" id="inivel" min="50" max="100" value="0">
+           <input type="file" name="ficheiro" id="ificheiro">
+        </p>
+        <p>
+            <label for="iilhas">ilhas</label>
+            <select name="ilhas" id="iilhas">
+                <option value="opção" selected>---Escolha uma opção</option>
+                <optgroup label="Barlavento">
+                    <option value="SA">Santo Antão</option>
+                    <option value="SV">São Vicente</option>
+                </optgroup>
+                    <optgroup label="Sotavento">
+                        <option value="ST">Santiago</option>
+                        <option value="FG">Fogo</option>
+                    </optgroup>
+              
+                
+                
+
+
+            </select>
+            <p>
+                <label for="izonas">Zonas:</label>
+                <input type="text" name="zonas" id="izonas" list="izonas">
+                <datalist>
+                    <option value="R">Ribeirinha</option>
+                    <option value="M">Morada</option>
+                    <option value="TL">Chã d'Alecrin</option>
+                    <option value="RB">Ribeirabote</option>
+                </datalist>
+            </p>
+        </p>
+        <p>
+            <label for="img"></label>
+        </p>
+        <p>
+            <input type="submit" value="enviar">
+            <input type="reset" value="canselar">
+        </p>
+        
+
+    </form>
+</body>
+</html>

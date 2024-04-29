@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alunos</title>
+    <style>  
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+    width: 100%;
+    border: 1px solid #ddd;
+  }
+  
+  th, td {
+    text-align: center;
+    padding: 8px;
+  }
+  h1{
+    color: orangered;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+  }
+  
+  tr:nth-child(even){background-color: #f2f2f2}
+  ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover:not(.active) {
+  background-color: #111;
+}
+
+.active {
+  background-color: orangered;
+}
+    main{
+      
+        height: 170px;
+        text-align: center;
+    }
+    main{
+      padding-bottom: 1%;
+    }
+    h1{
+      text-align: justify;
+      letter-spacing: 90%;
+      font-size: 200%;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+    }
+    p{
+    font-size: 160%;
+    font-family: Arial, Helvetica, sans-serif;
+
+
+    }
+
+ 
+
+
+
+    body {font-family: Arial, Helvetica, sans-serif;}
+        
+        /* Full-width input fields */
+        input[type=text], input[type=password] {
+          width: 100%;
+          padding: 12px 20px;
+          margin: 8px 0;
+          display: inline-block;
+          border: 1px solid #ccc;
+          box-sizing: border-box;
+        }
+        
+        /* Set a style for all buttons */
+        button {
+          background-color: orangered;
+          color: white;
+          padding: 14px 20px;
+          margin: 8px 0;
+          border: none;
+          cursor: pointer;
+          width: 100%;
+        }
+        
+        button:hover {
+          opacity: 0.8;
+        }
+        
+        /* Extra styles for the cancel button */
+        .cancelbtn {
+          width: auto;
+          padding: 10px 18px;
+          background-color: #f44336;
+        }
+        
+        /* Center the image and position the close button */
+        .imgcontainer {
+          text-align: center;
+          margin: 24px 0 12px 0;
+          position: relative;
+        }
+        
+        img.avatar {
+          width: 40%;
+          border-radius: 50%;
+        }
+        
+        .container {
+          padding: 16px;
+        }
+        
+        span.psw {
+          float: right;
+          padding-top: 16px;
+        }
+        
+        /* The Modal (background) */
+        .modal {
+          display: none; /* Hidden by default */
+          position: fixed; /* Stay in place */
+          z-index: 1; /* Sit on top */
+          left: 0;
+          top: 0;
+          width: 100%; /* Full width */
+          height: 100%; /* Full height */
+          overflow: auto; /* Enable scroll if needed */
+          background-color: rgb(0,0,0); /* Fallback color */
+          background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+          padding-top: 60px;
+        }
+        
+        /* Modal Content/Box */
+        .modal-content {
+          background-color: #fefefe;
+          margin: 5% auto 15% auto; /* 5% from the top, 15% from the bottom and centered */
+          border: 1px solid #888;
+          width: 80%; /* Could be more or less, depending on screen size */
+        }
+        
+        /* The Close Button (x) */
+        .close {
+          position: absolute;
+          right: 25px;
+          top: 0;
+          color: #000;
+          font-size: 35px;
+          font-weight: bold;
+        }
+        
+        .close:hover,
+        .close:focus {
+          color: red;
+          cursor: pointer;
+        }
+        
+        /* Add Zoom Animation */
+        .animate {
+          -webkit-animation: animatezoom 0.6s;
+          animation: animatezoom 0.6s
+        }
+        
+        @-webkit-keyframes animatezoom {
+          from {-webkit-transform: scale(0)} 
+          to {-webkit-transform: scale(1)}
+        }
+          
+        @keyframes animatezoom {
+          from {transform: scale(0)} 
+          to {transform: scale(1)}
+        }
+        
+        /* Change styles for span and cancel button on extra small screens */
+        @media screen and (max-width: 300px) {
+          span.psw {
+             display: block;
+             float: none;
+          }
+          .cancelbtn {
+             width: 100%;
+          }
+        }
+ 
+  </style>
+  </head>
+</head>
+
+  <main>
+    <ul>
+      <li><a class="active" href="Index.Html">Pagina Inicial</a></li>
+      <li><a href="Gestão Alunos index.html">Gestão Alunos</a></li>
+      <li><a href="Gestão Professores index.html">Gestão Professores</a></li>
+      <li><a href="Gestão Turmas index.html">Gestão Turmas</a></li>
+      <li  style="float:right"><a class="active" href="Login index.html">Login</a></li>
+    
+    </ul>
+    
+</form>
+
+  </main>
+    <footer>
+      <h1>Escola Secunária Jorge Barbosa 3ªTrim</h1>
+      <h2>Gestão dos Alunos 12ª ano CT
+      </h2>
+         
+        <h3>Turma X </h3>
+
+      <table>
+      <tr>
+          <th> Nome</th>
+          <th>Apelido</th>
+          <th>Endereço</th>
+          <th>Email</th>
+          <th>Data de Nascimento</th>
+          
+        </tr>
+        <tr>
+          <td>Lucas</td>
+          <td>Alves</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+        </tr>
+        <tr>
+         
+        </tr>
+        <tr>
+          <td>Eder</td>
+          <td>Ramos</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+         >
+        </tr>
+        <tr>
+          <td>Mauro</td>
+          <td>spencer</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+        </tr>
+        <tr>
+          <td>Renato</td>
+          <td>Garcia</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+        </tr>
+        <tr>
+          <td>Miguel</td>
+          <td>Medina</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+        </tr>
+        <tr>
+          <td>Silvia</td>
+          <td>Ramos</td>
+          <td>Cruz</td>
+          <td>example@gmail.com</td>
+          <td>11/11/2005</td>
+        </tr>
+      </table>
+              
+
+
+      <button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Adicionar novo aluno</button>
+
+      <div id="id01" class="modal">
+    
+    <form class="modal-content animate" action="/action_page.php" method="post">
+      <div class="imgcontainer">
+        <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+        <img src="Imagens/download.jpg" alt="Avatar" class="avatar">
+      </div>
+  
+      <div class="container">
+        <label for="uname"><b>Nome</b></label>
+        <input type="text" placeholder="digite o teu nome" name="uname" required>
+  
+        <label for="apelido"><b>Apelido</b></label>
+        <input type="text" placeholder="digite o apelido" name="apelido" required>
+
+        <label for="data"><b>data de nascimento</b></label>
+        <input type="date" placeholder="Dia/mês/Ano" name="apelido" required>
+
+        <label for="unemail"><b>Email</b></label>
+        <input type="email" placeholder="digite o teu email" name="unemail" required>
+
+        <label for="Endereço"><b>Endereço</b></label>
+        <input type="text" placeholder=" digite o nome da tua zona" name="unendereço" required>
+
+        <a href="Gestão Alunos index.html"><button type="submit">Pronto</button></a>
+        
+      </div>
+  
+      <div class="container" style="background-color:#f1f1f1">
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+       
+        
+  
+    </form>
+  </div>
+  
+  <script>
+  // Get the modal
+  var modal = document.getElementById('id01');
+  
+  // When the user clicks anywhere outside of the modal, close it
+  window.onclick = function(event) {
+      if (event.target == modal) {
+          modal.style.display = "none";
+      }
+  }
+  </script>
+    </footer>
+  
+
+</html>
